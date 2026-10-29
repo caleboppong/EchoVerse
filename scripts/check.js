@@ -1,0 +1,1 @@
+const fs=require('fs'),path=require('path');const required=['App.jsx','src/components/ArtCanvas.jsx','src/screens/Studio.jsx','assets/ambient.wav','assets/icon.png','assets/splash.png'];let bad=false;for(const f of required){const ok=fs.existsSync(path.join(__dirname,'..',f));console.log(`${ok?'OK':'MISSING'} ${f}`);if(!ok)bad=true;}process.exit(bad?1:0);
