@@ -1,6 +1,86 @@
+
 import React from 'react';
-import {ScrollView,Text,View,StyleSheet} from 'react-native';
-import {C} from '../theme/tokens';
-import {Label,Heading,Body,Panel,Action} from '../components/UI';
-export default function Settings({openInfo,openWelcome}){return <ScrollView contentContainerStyle={s.wrap}><Label>YOUR CREATIVE SPACE</Label><Heading style={{marginTop:8}}>Studio guide.</Heading><Body style={{marginTop:10,marginBottom:20}}>Understand the creative instrument, accessibility controls and how to share your artwork.</Body><Panel><Label>ABOUT ECHOVERSE</Label><Text style={s.section}>A different kind of canvas.</Text><Body>EchoVerse treats movement and interaction as artistic material. It is a student-designed experimental mobile experience, not a music player or a conventional drawing tool.</Body><Action title="Open how-to guide" onPress={openInfo} style={{marginTop:18}}/></Panel><Panel style={{marginTop:14}}><Label>GETTING STARTED</Label><Text style={s.section}>Revisit onboarding</Text><Body>Replay the introduction to the studio's creative concept.</Body><Action title="View introduction" outline onPress={openWelcome} style={{marginTop:18}}/></Panel><Panel style={{marginTop:14}}><Label>ROADMAP</Label><Body style={{marginTop:10}}>M1 — Professional interface and onboarding</Body><Body>M2 — SVG artwork and touch gestures</Body><Body>M3 — Motion sensor and original ambient audio</Body><Body>M4 — PNG sharing and focus mode</Body><Body>M5 — iPhone testing and submission</Body></Panel><Text style={s.footer}>ECHOVERSE STUDIO · COMBINED M1–M4 · V1.4</Text></ScrollView>}
-const s=StyleSheet.create({wrap:{padding:20,paddingBottom:35},section:{fontSize:19,fontWeight:'800',color:C.text,marginTop:9,marginBottom:9},footer:{textAlign:'center',color:C.muted,fontSize:10,marginTop:24,letterSpacing:1}});
+import { ScrollView, Text, StyleSheet } from 'react-native';
+import { C } from '../theme/tokens';
+import { Label, Heading, Body, Panel, Action } from '../components/UI';
+
+export default function Settings({ openInfo, openWelcome }) {
+    return (
+        <ScrollView contentContainerStyle={s.wrap}>
+            <Label>YOUR CREATIVE SPACE</Label>
+
+            <Heading style={{ marginTop: 8 }}>
+                Studio guide.
+            </Heading>
+
+            <Body style={{ marginTop: 10, marginBottom: 20 }}>
+                Understand the creative instrument, accessibility controls
+                and how to share your artwork.
+            </Body>
+
+            <Panel>
+                <Label>ABOUT ECHOVERSE</Label>
+
+                <Text style={s.section}>
+                    A different kind of canvas.
+                </Text>
+
+                <Body>
+                    EchoVerse treats movement and interaction as artistic
+                    material. It is a student-designed experimental mobile
+                    experience, not a music player or a conventional drawing tool.
+                </Body>
+
+                <Action
+                    title="Open how-to guide"
+                    onPress={openInfo}
+                    style={{ marginTop: 18 }}
+                />
+            </Panel>
+
+            <Panel style={{ marginTop: 14 }}>
+                <Label>GETTING STARTED</Label>
+
+                <Text style={s.section}>
+                    Revisit onboarding
+                </Text>
+
+                <Body>
+                    Replay the introduction to the studio's creative concept.
+                </Body>
+
+                <Action
+                    title="View introduction"
+                    outline
+                    onPress={openWelcome}
+                    style={{ marginTop: 18 }}
+                />
+            </Panel>
+
+            <Text style={s.footer}>
+                ECHOVERSE STUDIO · VERSION 1.0
+            </Text>
+        </ScrollView>
+    );
+}
+
+const s = StyleSheet.create({
+    wrap: {
+        padding: 20,
+        paddingBottom: 35,
+    },
+    section: {
+        fontSize: 19,
+        fontWeight: '800',
+        color: C.text,
+        marginTop: 9,
+        marginBottom: 9,
+    },
+    footer: {
+        textAlign: 'center',
+        color: C.muted,
+        fontSize: 10,
+        marginTop: 24,
+        letterSpacing: 1,
+    },
+});

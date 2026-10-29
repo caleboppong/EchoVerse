@@ -22,7 +22,7 @@ An original React Native / Expo **JavaScript JSX** university assessment prototy
 
 ## Limitations / academic honesty
 
-This is a combined **implementation package**, not a tested or certified iPhone build. No physical-device testing has been performed by the assistant. The audio is ambient playback, **not microphone analysis or sound-reactive visualisation**. PNG export is a still image, not animated video. Motion may not work in web previews. No account, backend or personal-data collection is included. The app does not persist presets between launches (not required for App 1). Keep your own development notes and follow university policies on attribution and use of AI assistance.
+This is a combined **implementation package**, not a tested or certified iPhone build. No physical-device testing has been performed by the assistant. The audio is ambient playback, **not microphone analysis or sound-reactive visualisation**. PNG export is a still image, not animated video. Motion may not work in web previews. No account, backend or personal-data collection is included. 
 
 ## Troubleshooting
 
