@@ -11,10 +11,12 @@
   "dependencies": {
     "@react-native-community/slider": "5.2.1",
     "expo": "~58.0.21",
+    "expo-asset": "~58.0.19",
     "expo-audio": "*",
     "expo-haptics": "*",
     "expo-sensors": "*",
     "expo-sharing": "*",
+    "expo-splash-screen": "~58.0.12",
     "expo-status-bar": "*",
     "react": "19.3.0",
     "react-native": "*",

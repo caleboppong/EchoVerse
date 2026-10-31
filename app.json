@@ -8,9 +8,34 @@
     "userInterfaceStyle": "dark",
     "backgroundColor": "#080C19",
     "icon": "./assets/icon.png",
-    "splash": {"image":"./assets/splash.png","resizeMode":"contain","backgroundColor":"#080C19"},
-    "ios": {"supportsTablet":true},
-    "android": {"adaptiveIcon":{"foregroundImage":"./assets/adaptive-icon.png","backgroundColor":"#080C19"}},
-    "experiments": {"reactCompiler":false}
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#080C19"
+      }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#080C19"
+        }
+      ],
+      "expo-asset"
+    ],
+    "experiments": {
+      "reactCompiler": false
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3fc45d22-62c7-4c50-8d70-eac9fae6b526"
+      }
+    }
   }
 }
